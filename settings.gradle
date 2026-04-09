@@ -1,1 +1,3 @@
 rootProject.name = 'Transactional-Outbox-Pattern'
+include 'Order'
+include 'Payment'
