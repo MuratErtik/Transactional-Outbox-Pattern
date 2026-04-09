@@ -1,0 +1,19 @@
+apiVersion: skaffold/v4beta13
+kind: Config
+metadata:
+  name: transactional-outbox-pattern
+build:
+  artifacts:
+    - image: order
+      context: Order
+      jib: {}
+    - image: payment
+      context: Payment
+      jib: {}
+manifests:
+  rawYaml:
+    - mysql/deployment.yml
+    - Order/deployment.yaml
+    - Payment/deployment.yaml
+    - kafka/deployment.yml
+    - debezium/deployment.yml
