@@ -29,7 +29,7 @@ spec:
               echo "Kafka is ready!"
       containers:
         - name: debezium
-          image: quay.io/debezium/connect:2.7.4.Final
+          image: quay.io/debezium/connect:3.0.0.Final
           ports:
             - containerPort: 8083
           env:
