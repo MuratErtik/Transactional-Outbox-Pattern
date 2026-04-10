@@ -92,11 +92,3 @@ kubectl rollout restart deployment/<deployment-name>
 # Check Kafka topics (example if you have a tooling pod)
 kubectl exec -it <kafka-pod> -- bash
 ```
-
-## Contributing
-
-PRs and issues are welcome.
-
-## License
-
-Add a license if you plan to open-source this project.
