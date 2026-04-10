@@ -71,24 +71,6 @@ kubectl port-forward svc/mysql 3306:3306
   - publish raw outbox table row changes, or
   - use Debezium’s **Outbox Event Router** SMT to route events by aggregate/type.
 
-## Project Structure
 
-This README is intentionally generic. Once your repo structure stabilizes, consider documenting:
-
-- API endpoints
-- Database schema (business + outbox tables)
-- Connector configuration files
-- Kubernetes manifests / Helm charts
-
-## Useful Commands
-
-```bash
-# View logs for a deployment
-kubectl logs -l app=<app-label> -f
-
-# Restart a deployment
-kubectl rollout restart deployment/<deployment-name>
-
-# Check Kafka topics (example if you have a tooling pod)
 kubectl exec -it <kafka-pod> -- bash
 ```
