@@ -71,6 +71,3 @@ kubectl port-forward svc/mysql 3306:3306
   - publish raw outbox table row changes, or
   - use Debezium’s **Outbox Event Router** SMT to route events by aggregate/type.
 
-
-kubectl exec -it <kafka-pod> -- bash
-```
